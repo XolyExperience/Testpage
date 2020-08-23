@@ -129,7 +129,7 @@ cite {
 }
 
 cite::before {
-  content: ' ';
+  content: "";
   position: absolute;
   left: 0;
   top: 6px;
@@ -144,7 +144,7 @@ h2 {
 }
 
 h2::before {
-  content: ' ';
+  content: "";
   position: absolute;
   height: 5px;
   width: 30px;
@@ -154,7 +154,7 @@ h2::before {
 
 .companies {
   text-align: center;
-  opacity: .4em;
+  opacity: .4;
 }
 
 .companies li {
