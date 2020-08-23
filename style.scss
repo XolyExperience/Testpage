@@ -6,5 +6,27 @@ body{
     background: #b36200;
     color: white;
     font-family: Verdana, Tahoma, sans-serif;
-
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.hero-wrapper {
+    background: url('Images/hero.jpg');
+    background-size: cover;
+}
+.wrapper{
+    padding: 1.5em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    
 }
