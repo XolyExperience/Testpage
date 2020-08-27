@@ -1,93 +1,115 @@
-*{
+* {
     box-sizing: border-box;
 }
-body{
+
+body {
     margin: 0;
     background: #b36200;
     color: white;
     font-family: 'Verdana';
 }
-a{
+
+a {
     color: white;
     text-decoration: none;
 }
-ul{
+
+ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
+
 .hero-wrapper {
     background: url('../Images/hero.png');
     background-size: cover;
 }
-.wrapper{
+
+.wrapper {
     padding: 1.5em;
     max-width: 1200px;
     margin: 0 auto;
 }
-header{
+
+header {
     display: flex;
     justify-content: space-between;
-    .logo{
+
+    .logo {
         font-weight: bold;
     }
-    ul{
+
+    ul {
         display: flex;
-        li a{
+
+        li a {
             padding: 0 .6em;
         }
     }
 }
-.hero-content{
+
+.hero-content {
     margin: 4em 0 2em;
     text-align: right;
-    .subtitle{
+
+    .subtitle {
         margin-bottom: 0;
     }
 }
-.light-wrapper{
+
+.light-wrapper {
     background: #cc7000;
 }
-.stats{
+
+.stats {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
     justify-content: space-around;
     margin-top: 2em;
-    li{
+
+    li {
         margin-bottom: 1.5em;
     }
-    strong{
+
+    strong {
         font-size: 1.4em;
     }
-    span{
+
+    span {
         display: block;
         text-transform: uppercase;
         font-size: .75em;
     }
 }
-.arrows{
+
+.arrows {
     display: none;
 }
-.extended-wrapper{
+
+.extended-wrapper {
     padding: 0 1.5em 2em;
     max-width: 1230px;
     margin: 0 auto;
 }
-ul.carousal{
+
+ul.carousal {
     margin-bottom: 1em;
-    li{
+
+    li {
         background: #e67e00;
         padding: 1em;
         margin-bottom: 1em;
     }
 }
-blockquote{
+
+blockquote {
     margin: 0;
     font-size: .8em;
     line-height: 1.8em;
     margin-bottom: 1em;
 }
-cite{
+
+cite {
     color: #ffaf4d;
     font-weight: bold;
     font-size: .8em;
@@ -95,7 +117,8 @@ cite{
     position: relative;
     padding-left: 25px;
 }
-cite::before{
+
+cite::before {
     content: "";
     position: absolute;
     left: 0;
@@ -104,11 +127,13 @@ cite::before{
     width: 20px;
     border-bottom: 1px solid white;
 }
-h2{
+
+h2 {
     text-align: center;
     position: relative;
 }
-h2::before{
+
+h2::before {
     content: "";
     position: absolute;
     height: 5px;
@@ -116,101 +141,129 @@ h2::before{
     background: #ffaf4d;
     top: -.3em;
 }
-.companies{
+
+.companies {
     text-align: center;
     opacity: .9;
-    li{
+
+    li {
         margin: 2em 0;
     }
-    .companies-one{
+
+    .companies-one {
         height: 200px;
     }
-    .companies-two{
+
+    .companies-two {
         height: 200px;
     }
-    .companies-three{
+
+    .companies-three {
         height: 130px;
     }
 }
+
 @media (min-width: 500px) {
     .companies {
         display: grid;
-        grid-template-columns: repeat(2,auto);
+        grid-template-columns: repeat(2, auto);
     }
 }
+
 @media (min-width: 650px) {
-    body{
+    body {
         font-size: 18px;
     }
-    .wrapper{
+
+    .wrapper {
         padding: 1.5em 4em;
     }
-    .c-container{
+
+    .c-container {
         display: flex;
     }
-    .arrows{
+
+    .arrows {
         display: block;
         width: 40px;
         height: 40px;
         cursor: pointer;
         margin: .5em;
     }
-    .left{
+
+    .left {
         transform: rotateZ(180deg);
     }
-    ul.carousal{
+
+    ul.carousal {
         display: flex;
         margin-bottom: 0;
-        li{
+
+        li {
             margin-right: 1em;
             margin-bottom: 0em;
             padding: 2em;
-            &:last-child{
+
+            &:last-child {
                 margin-right: 0;
             }
         }
     }
-    .companies{
+
+    .companies {
         display: flex;
         justify-content: space-between;
     }
 }
-@media (min-width: 835px){
-    body{
+
+@media (min-width: 835px) {
+    body {
         font-size: 20px;
     }
-    .stats{
+
+    .stats {
         display: flex;
         justify-content: space-between;
         margin: 0;
     }
-    .companies{
-        grid-template-columns: repeat(4,auto);
+
+    .companies {
+        grid-template-columns: repeat(4, auto);
     }
-    h1{
+
+    h1 {
         font-size: 2.5em;
     }
-    .subtitle{
+
+    .subtitle {
         font-size: 1.2em;
     }
-    h2{
+
+    h2 {
         text-align: left;
         font-size: 2em;
     }
-    .v-padding{
+
+    .v-padding {
         padding: 4em;
     }
-    .light-wrapper{
+
+    .light-wrapper {
         padding-bottom: 4em;
     }
-    .move-up{
+
+    .move-up {
         margin-top: -7em;
     }
 }
-@media (minwidth: 1200px){
-    .stats li{
+
+@media (minwidth: 1200px) {
+    .stats li {
         border-right: 1px solid #ffaf4d;
         padding-right: 5%;
-        &:last-child{border: 0;}
+
+        &:last-child {
+            border: 0;
+        }
     }
 }
