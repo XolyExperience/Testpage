@@ -17,7 +17,7 @@ ul{
     padding: 0;
 }
 .hero-wrapper {
-    background: url('Images/hero.jpg');
+    background: url('../Images/hero.png');
     background-size: cover;
 }
 .wrapper{
@@ -118,15 +118,18 @@ h2::before{
 }
 .companies{
     text-align: center;
-    opacity: .8;
+    opacity: .9;
     li{
         margin: 2em 0;
     }
     .companies-one{
-        width: 150px;
+        height: 200px;
     }
     .companies-two{
-        width: 150px;
+        height: 200px;
+    }
+    .companies-three{
+        height: 130px;
     }
 }
 @media (min-width: 500px) {
@@ -152,7 +155,7 @@ h2::before{
         cursor: pointer;
         margin: .5em;
     }
-    .right{
+    .left{
         transform: rotateZ(180deg);
     }
     ul.carousal{
